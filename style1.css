@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+  body{
+    background-image: linear-gradient( to right, #0781fb, #6887e3  );
+  }
+
+
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  text-align: center;
+  color: royalblue;
+
+}
+
+main{
+  background-color: rgba(255, 255, 255, 0.803);
+  width: 600px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+}
+
+p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
+header{
+  color: white;
+}
+
+ul{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ text-align: center;
+  color: royalblue;
+}
+a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: royalblue;
+  text-decoration: none;
+  transition: 0,3s;
+}
+
+
+.logo {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+    letter-spacing: 4px;
+}
+ 
+ nav { 
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   font-family: Optima, sans-serif;
+   background: url(fundo.jpg!d) no-repeat;
+   backdrop-filter: blur(20px);
+   height: 12vh;
+}
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  color:white;
+  cursor: pointer;
+}
+
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background-color: white;
+  backdrop-filter: blur(20px);
+  margin: 8px;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 9vh;
+      right: 0;
+    width: 50vw;
+      height: 91vh;
+      background: url(nav.jpg);
+    backdrop-filter: blur(20px);
+      flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    transform: translateX(100%);
+  }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 100;
+    }
+  
+  .mobile-menu{
+    display: block;
+  }
+  
+  .nav-list.active {
+    transform: translateX(0%)
+  }}
